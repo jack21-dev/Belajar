@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <button id="toggleDark">🌙 Dark Mode</button>
+
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <title>Belajar Asik</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <li><a href="#beranda">HOME</a></li>
+        <li><a href="#tentang">ABOUT</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#galeri">GALLERY</a></li>
+        <li><a href="#kontak">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- PROFIL SINGKAT -->
+    <section class="profil" id="beranda">
+      <img
+        src="https://img.freepik.com/free-photo/digital-art-style-illustration-graphic-designer_23-2151536948.jpg"
+        alt="Foto Fu"
+      />
+      <h1>Halo, aku Fu 👋</h1>
+      <p>Belajar desain & coding untuk jadi kreator digital profesional.</p>
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section class="tentang" id="tentang" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        Saya seorang pembelajar mandiri yang tertarik pada desain visual,
+        teknologi, dan pengembangan diri. Saat ini saya sedang mempelajari HTML,
+        CSS, dan Canva untuk membuat portofolio digital yang menarik dan
+        komunikatif.
+      </p>
+    </section>
+
+    <!-- SKILL -->
+    <section class="skill" id="skill" data-aos="fade-left">
+      <h2>Skill</h2>
+      <ul>
+        <li>✅ Canva Design</li>
+        <li>✅ HTML & CSS</li>
+        <li>✅ Copywriting</li>
+      </ul>
+    </section>
+
+    <!-- GALERI PROJECT -->
+    <section class="galeri" id="galeri" data-aos="zoom-in">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <div class="box">
+          <h3>Feed Instagram Skincare</h3>
+          <p>Desain konten soft & clean untuk brand lokal.</p>
+        </div>
+        <div class="box">
+          <h3>Landing Page Personal</h3>
+          <p>HTML + CSS untuk portofolio pribadi responsif.</p>
+        </div>
+        <div class="box">
+          <h3>Copywriting Caption</h3>
+          <p>Caption promo makanan ringan yang menggugah selera.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+      <p>📧 Hubungi saya: <a href="mailto:fu@email.com">fu@email.com</a></p>
+      <p>© 2025 Fu | Dibuat dengan ❤️ pakai HTML + CSS</p>
+    </footer>
+    <section id="kontak">
+      <h2>Kontak Saya</h2>
+      <form action="https://formsubmit.co/fu@email.com" method="POST">
+        <input type="text" name="name" placeholder="Nama" required />
+        <input type="email" name="email" placeholder="Email Anda" required />
+        <textarea
+          name="message"
+          placeholder="Pesan..."
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const toggleBtn = document.getElementById("toggleDark");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
